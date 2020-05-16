@@ -1,0 +1,342 @@
+.course-card-container {
+    margin-bottom: 6.8rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    border-radius: 4px !important;
+    overflow: hidden;
+    width: 96%;
+    max-width: 30rem;
+    // margin: auto;
+    border: 1px solid #ebebeb;
+    background-color: #fff;
+    box-sizing: content-box;
+    cursor: pointer;
+    margin: 0 2rem;
+    margin-bottom: 3rem;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: .4s ease;
+    }
+
+    @include respond(phone) {
+        &:hover {
+            transform: none;
+            transition: none;
+        }
+    }
+
+}
+
+.card-image {
+    //   background-image: url(../assets/page-1/bitmap/android.png);
+    background-color: #dbf2ff;
+    max-height: 14rem;
+    position: relative;
+    cursor: pointer;
+    height: 16.7rem;
+    background-size: cover;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+
+}
+
+.card-top-tag {
+    background-color: #000000;
+    opacity: 0.4;
+    //   width: 12.5rem;
+    height: 2.5rem;
+    position: absolute;
+    top: 1.4rem;
+    left: 1.5rem;
+    border-radius: 0.3rem;
+}
+
+.card-tag-text {
+    color: #ffffff;
+    padding: 0.2rem 0.5rem;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: 0.171rem;
+}
+
+.card-content {
+    padding: 16px 12px 24px 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.card-title {
+    text-align: left;
+    color: #1f2a55;
+    font-size: 1.7rem;
+    font-weight: 400;
+    letter-spacing: 0.02rem;
+    line-height: 2.6rem;
+    max-width: 24rem;
+}
+
+.card-content-divider {
+    width: 100%;
+    height: 0.2rem;
+    background: #ebebeb;
+    margin: 1.2rem auto 1.6rem;
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// .card-info-text {
+//     // margin-right: auto;
+//     // margin-left: auto;
+// }
+
+.card-info-sub-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem 0.5rem;
+}
+
+.card-info-sub-icon {
+    height: 1.7rem;
+    width: 1.7rem;
+    object-fit: contain;
+}
+
+.card-info-sub-title {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    letter-spacing: 0.017rem;
+    color: #777b8c;
+    padding: 0 0.8rem;
+}
+
+.card-info-grade {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2rem;
+    letter-spacing: 0.02rem;
+    color: #1f2a55;
+}
+
+.card-sylab-info {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.card-sylab-icon {
+    width: 2.4rem;
+    height: 1.8rem;
+    object-fit: contain;
+    margin-right: 1rem;
+}
+
+.card-sylab-sub-info {
+    background-color: #eef9ff;
+    height: 2.4rem;
+    top: 0rem;
+    border-radius: 0.3rem;
+    margin: 0 0.5rem;
+}
+
+.card-sylab-sub-title {
+    color: #0bc29f;
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 0.02rem;
+    padding: 0.2rem 1rem;
+}
+
+.card-point-info {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.card-point-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    object-fit: contain;
+    margin-right: 1rem;
+}
+
+.card-point-sub-info {
+    background-color: #ffe0c5;
+    height: 2.4rem;
+    top: 0rem;
+    border-radius: 0.3rem;
+    margin: 0 0.5rem;
+}
+
+.card-point-sub-title {
+    color: #f4bf1a;
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 0.02rem;
+    padding: 0.2rem 1rem;
+}
+
+// .card-time-container {}
+
+.card-time-info {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.card-time-info-icon {
+    width: 1.5rem;
+    height: 1.4rem;
+    object-fit: contain;
+    margin-right: 1rem;
+    margin-left: 0.35rem;
+}
+
+.card-time-info-title {
+    color: #1f2a55;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 2rem;
+    letter-spacing: 0.02rem;
+    padding: 0.2rem 1rem;
+}
+
+.card-enrol-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.2rem 0;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.card-price-value {
+    color: #1f2a55;
+    padding: 0.1rem 0.5rem;
+}
+
+.card-enrol-btn {
+    color: #076fec;
+    font-weight: 600;
+    line-height: 2rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: transparent;
+    border-style: none;
+    padding: 0.1rem 0.5rem;
+}
+
+//Filter card
+.card-basic-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-live {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0.2rem 0.5rem;
+    margin-top: 0.6rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 0.17rem;
+    width: 70%;
+}
+
+.card-live-title {
+    text-transform: uppercase;
+    color: rgba(31, 42, 85, .4);
+
+}
+
+.card-live-sub-title {
+    text-transform: uppercase;
+    color: #1f2a55;
+    padding-left: 1rem;
+}
+
+.card-price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 0.5rem;
+}
+
+.card-price-text,
+.card-offer-text {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.card-price-icon {
+    height: 1.1rem;
+    width: 1.1rem;
+    object-fit: contain;
+}
+
+.card-price-title {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    letter-spacing: 0.017rem;
+    color: #1f2a55;
+    padding: 0 0.5rem;
+}
+
+.card-price-sub-title {
+    text-decoration: line-through;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    letter-spacing: 0.017rem;
+    color: rgba(31, 42, 85, .6);
+    padding: 0 0.5rem;
+}
+
+.card-offer-icon {
+    height: 1.4rem;
+    width: 1.4rem;
+    object-fit: contain;
+}
+
+.card-offer-title {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    letter-spacing: 0.017rem;
+    color: #019977;
+    padding: 0 0.5rem;
+}
+
+.learn-more-btn {
+    color: #076fec;
+    font-weight: 600;
+    line-height: 2rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: transparent;
+    border-style: none;
+    padding: 0.1rem 0.5rem;
+}

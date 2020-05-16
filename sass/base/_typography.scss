@@ -1,0 +1,21 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: $default-font-size;
+    line-height: 1.4;
+    background-color: $background-color;
+    color: $primary-color-black;
+}
+
+.filter-text {
+    color: #1f2a55;
+    font-size: 1.4rem;
+    font-weight: 300;
+
+}
+
+.text-highlight {
+    color: #1f2a55;
+    font-size: 1.4rem;
+    font-weight: 600;
+}

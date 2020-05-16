@@ -1,0 +1,107 @@
+.bg-container {
+    text-align: left;
+    padding: 0 11rem;
+
+    @include respond(tab-land) {
+        text-align: center;
+        padding: 0 4rem;
+    }
+}
+
+
+.bg-title {
+    font-size: 4rem;
+    font-weight: 400;
+    color: #fff;
+    line-height: 5rem;
+    padding-bottom: 3.2rem;
+
+    @include respond(tab-land) {
+        font-size: 2.8rem;
+    }
+
+    @include respond(phone) {
+        font-size: 2.6rem;
+        padding-bottom: 2rem;
+    }
+}
+
+.bg-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 3.2rem;
+
+    @include respond(tab-land) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.bg-info {
+    @include respond(tab-land) {
+        text-align: center;
+        flex: 0 50%;
+        margin-bottom: 2rem;
+    }
+
+    @include respond(phone) {
+        text-align: center;
+        flex: 0 100%;
+        margin-bottom: 2rem;
+    }
+}
+
+.bg-icon {
+    height: 7.6rem;
+    width: 10rem;
+    object-fit: contain;
+    margin-bottom: 1.6rem;
+
+    @include respond(phone) {
+        height: 6rem;
+        width: 8rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+.bg-info-title {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #fff;
+    padding: 0.3rem 0;
+
+    @include respond(phone) {}
+}
+
+.bg-info-sub-text {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #fff;
+    max-width: 23rem;
+    line-height: 2rem;
+
+    @include respond(tab-land) {
+        max-width: 100%;
+    }
+
+    @include respond(phone) {
+        max-width: 100%;
+    }
+}
+
+.free-trial-btn {
+    border-style: none;
+    background-color: #f5a623;
+    height: 4.8rem;
+    width: 29rem;
+    padding: 0 1.4rem;
+    border-radius: .4rem;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+}

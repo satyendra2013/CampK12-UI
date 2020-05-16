@@ -1,0 +1,124 @@
+.main {
+    text-align: center;
+    background-image: linear-gradient(to top bottom,
+            rgba(#eef9ff, 0.2),
+            rgba(#22b7ef, 0.2));
+}
+
+.course-filter-container {
+    position: relative;
+    margin-top: -4rem;
+    background-color: #ffffff;
+    border: 1px solid #d8e4eb;
+    border-radius: .4rem;
+    z-index: 500;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5rem 5rem;
+    margin-bottom: 5rem;
+    box-sizing: content-box;
+    max-width: 105rem;
+    overflow: hidden;
+
+    @include respond(tab-land) {
+        max-width: 90rem;
+    }
+
+    @include respond(tab-port) {
+        max-width: 88rem;
+    }
+
+    @include respond(phone) {
+        left: 0.5rem;
+        width: 77%;
+        max-width: 80rem;
+        padding: 2rem 2rem;
+    }
+}
+
+.course-filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 0.5rem;
+
+
+    @include respond(tab-port) {
+        flex-direction: column;
+    }
+}
+
+
+//dropdown-filter-btn
+.dropdown-body {
+    font-size: 1.6rem !important;
+    color: #1f2a55 !important;
+    background-color: #ffffff !important;
+    border: 1px solid #d8e4eb;
+    border-radius: 4px !important;
+    margin-bottom: .8rem !important;
+    position: relative;
+
+    &:hover,
+    &:focus,
+    &:active {
+        border: 1px solid #d8e4eb;
+    }
+
+    @include respond(phone) {
+        margin: 1.8rem 0;
+    }
+}
+
+.dropdown-input {
+    overflow: hidden !important;
+}
+
+.input-selector {
+    font-size: 1.6rem !important;
+    line-height: 2.4rem !important;
+    color: #1f2a55 !important;
+    padding-top: 0.8rem !important;
+    padding-bottom: 0.8rem !important;
+    background-color: transparent !important;
+    padding-left: 1.1rem !important;
+    padding-right: 10rem !important;
+    border: medium none !important;
+    background-color: transparent !important;
+
+    border: medium none !important;
+    height: unset !important;
+    display: block !important;
+    width: 44% !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    @include respond(phone) {
+        width: 44% !important;
+    }
+
+}
+
+.dropdown-btn {
+
+    position: absolute !important;
+    top: 1.6rem !important;
+    right: 1.5rem !important;
+    line-height: 0 !important;
+    pointer-events: none !important;
+}
+
+.dropdown-svg {
+    height: 12px;
+    width: 12px;
+    display: block;
+    fill: #1f2a55
+}
+
+.filter-course-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

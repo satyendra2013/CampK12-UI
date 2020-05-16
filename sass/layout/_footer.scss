@@ -1,0 +1,36 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: linear-gradient(82deg, #207cee -3%, #73caf3 119%);
+    height: 8rem;
+    align-items: center;
+}
+
+.footer-main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: linear-gradient(82deg, #207cee -3%, #73caf3 119%);
+    height: 8rem;
+    align-items: center;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    margin-top: 95%;
+    width: 100%;
+}
+
+.footer-text {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 2.8rem;
+    letter-spacing: 0.011rem;
+    color: #fff;
+    padding: 0.5rem 1rem;
+
+}
+
+.footer-email {
+    font-weight: 600;
+}

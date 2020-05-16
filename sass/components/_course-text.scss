@@ -1,0 +1,98 @@
+// .course-container {}
+
+.course-content {
+    margin-bottom: 6.8rem;
+
+    @include respond(phone) {
+        margin-bottom: 4rem;
+    }
+}
+
+.course-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include respond(phone) {
+        flex-direction: column;
+
+    }
+}
+
+.course-heading-primary {
+    color: #1f2a55;
+    font-size: 3.2rem;
+    font-weight: 400;
+    letter-spacing: 0.018rem;
+    padding: 1rem 2rem;
+
+    @include respond(phone) {
+        font-size: 2.6rem;
+    }
+}
+
+.course-live-box {
+    background-color: #de9dff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.4rem 1.5rem;
+
+    @include respond(phone) {
+        padding: 0.2rem 0.8rem;
+        margin-bottom: 0.8rem;
+    }
+}
+
+.course-live-text {
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 400;
+
+    @include respond(phone) {
+        font-size: 1.6rem;
+    }
+}
+
+.course-sub-text {
+    color: #777b8c;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 2.7rem;
+    padding-bottom: 0.6rem;
+
+    @include respond(phone) {
+        font-size: 1.6rem;
+    }
+}
+
+.course-heading-secondary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include respond(phone) {
+        flex-direction: column;
+    }
+}
+
+.course-secondary-text {
+    color: #777b8c;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 2.7rem;
+    padding-bottom: 0.6rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+
+    @include respond(phone) {
+        font-size: 1.6rem;
+    }
+}
+
+.text-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+    object-fit: contain;
+    top: 0.8rem;
+    position: relative;
+}

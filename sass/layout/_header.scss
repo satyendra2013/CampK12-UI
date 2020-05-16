@@ -1,0 +1,399 @@
+//HEADER-INDEX
+.main-nav-container {
+    height: 110vh;
+    background-image:
+        url(../assets/page-2/bitmap/header-background.png);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    background-repeat: no-repeat;
+    z-index: 1;
+
+    @include respond(tab-land) {
+        height: 135vh;
+    }
+
+    @include respond(tab-port) {
+        height: 138vh;
+    }
+
+    @include respond(phone) {
+        height: 170vh;
+    }
+}
+
+.main-navbar {
+    background: none;
+    margin-bottom: 12rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 10rem;
+
+    @include respond(tab-land) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5rem;
+        padding: 0 2rem;
+        flex-direction: column;
+    }
+}
+
+.main-nav-left-link {
+
+    @include respond(tab-land) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0.5rem auto;
+    }
+}
+
+.main-nav-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3.6rem;
+
+    @include respond(tab-land) {
+        flex-direction: column;
+    }
+
+}
+
+.main-nav-logo {
+    width: 14.4rem;
+    height: 2.4rem;
+    object-fit: contain;
+}
+
+.nav-link-left {
+    text-decoration: none;
+    padding: 0 2.6rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    line-height: 2rem;
+    color: #fff;
+    align-items: center;
+
+    @include respond(tab-land) {
+        padding: 0 0.8rem;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    @include respond(phone) {
+        padding: 0 0.5rem;
+        font-size: 1rem;
+    }
+}
+
+.main-nav-right {
+    display: flex;
+    align-items: center;
+    margin-top: 3.6rem;
+
+    @include respond(tab-land) {
+        margin-top: 1rem;
+    }
+}
+
+.main-nav-icon {
+    height: 3.4rem;
+    width: 3.4rem;
+    object-fit: contain;
+
+    @include respond(phone) {
+        height: 2.4rem;
+        width: 2.4rem;
+    }
+}
+
+.nav-btn-right {
+    border-style: none;
+    background-color: #60b9f2;
+    height: 3.4rem;
+    margin-left: 1rem;
+    padding: 0 2rem;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 0.2rem;
+    margin-bottom: auto;
+
+    @include respond(phone) {
+        height: 2.4rem;
+        font-size: 1.2rem;
+        font-weight: 400;
+        border-radius: .2rem;
+    }
+}
+
+//HEADER-HOME
+.header {
+    height: 110vh;
+    background-image: url(../assets/page-1/bitmap/bg-header.png);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    @include respond(tab-land) {
+        height: 125vh;
+    }
+}
+
+
+.header-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10rem;
+    padding-top: 5.5rem;
+
+    @include respond(tab-land) {
+        padding: 0 2rem;
+        padding-top: 2.5rem;
+    }
+
+    @include respond(phone) {
+        padding: 0 1rem;
+        padding-top: 2.5rem;
+    }
+}
+
+.header-logo {
+    width: 14.4rem;
+    height: 2.4rem;
+    object-fit: contain;
+}
+
+.navbar {
+    display: flex;
+
+    &__item {
+        list-style: none;
+        padding: 0 0.5rem;
+
+        &__combine {
+            display: flex;
+            height: 3.4rem;
+
+        }
+
+        &__score {
+            background-color: #71aef3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0rem 3rem;
+            width: 5rem;
+            border: none;
+            border-radius: 3px;
+        }
+
+        &__skill-score {
+            color: #fff;
+            font-size: 1.4rem;
+            font-weight: 400;
+            height: 2rem;
+            width: 2rem;
+        }
+
+        &__img {
+            height: 1.6rem;
+            width: 1.9rem;
+            object-fit: contain;
+            padding-right: 0.4rem;
+
+            @include respond(phone) {
+                padding-right: 0rem;
+            }
+        }
+
+        &__user-img {
+            height: 3.4rem;
+            width: 3.4rem;
+            object-fit: contain;
+            border: none;
+            border-radius: 3px;
+        }
+    }
+
+    &__link {
+        list-style: none;
+    }
+
+    &__icon {
+        height: 3.4rem;
+        width: 3.4rem;
+        object-fit: contain;
+    }
+
+    &__notification {
+        font-size: 1rem;
+        height: 1.4rem;
+        width: 1.4rem;
+        border-radius: 50%;
+        background-color: #ff677f;
+        color: #fff;
+        position: absolute;
+        top: 5rem;
+        right: 21.5rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include respond(tab-land) {
+            top: 2rem;
+            right: 13.5rem;
+        }
+
+        @include respond(phone) {
+            top: 2rem;
+            right: 12.5rem;
+        }
+    }
+
+    &__drop-icon {
+        height: 1.4rem;
+        width: 0.8rem;
+        object-fit: contain;
+        top: 6.6rem;
+        position: absolute;
+
+        @include respond(tab-land) {
+            top: 3.5rem;
+            margin-left: -0.5rem;
+        }
+
+        @include respond(phone) {
+            top: 3.5rem;
+            margin-left: -0.5rem;
+        }
+    }
+}
+
+
+
+.header-heading {
+    width: 100%;
+    display: flex;
+    padding: 0 10rem;
+    color: $primary-color-white;
+    margin-top: 10rem;
+
+    @include respond(tab-land) {
+        padding: 0 3.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    @include respond(tab-port) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
+        padding: 0 2rem;
+    }
+
+}
+
+.header-text {
+    padding: 3rem 0 4.8rem 0;
+    width: 60%;
+    text-align: left;
+
+    @include respond(tab-land) {
+        width: 100%;
+        text-align: center;
+    }
+
+    @include respond(phone) {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.heading-primary {
+    font-size: $header-heading-primary;
+    margin-bottom: 3rem;
+    font-weight: 300;
+    line-height: 5rem;
+    letter-spacing: 0.022rem;
+
+}
+
+.heading-secondary {
+    font-size: $header-heading-secondary;
+    margin-bottom: 1.4rem;
+    line-height: 3.4rem;
+    font-weight: 300;
+    letter-spacing: 0.024rem;
+
+    @include respond(tab-land) {
+        font-size: 1.6rem;
+        line-height: 2rem;
+        margin-bottom: -2.5rem;
+    }
+
+    @include respond(phone) {
+        font-size: 1.4rem;
+
+    }
+
+    &__highlight {
+        color: #fcda55;
+    }
+
+    &__icon {
+        height: 2.8rem;
+        width: 2.8rem;
+        object-fit: contain;
+        top: 0.8rem;
+        position: relative;
+
+        @include respond(tab-land) {
+            height: 1.4rem;
+            width: 1.4rem;
+            top: 0.2rem;
+        }
+    }
+}
+
+.header-image-container {
+    width: 40%;
+
+    @include respond(tab-land) {
+        width: 100%;
+    }
+
+}
+
+.header-image {
+    width: 48rem;
+
+    @include respond(tab-land) {
+        width: 38rem;
+
+    }
+
+    @include respond(tab-port) {
+        height: 30rem;
+        object-fit: contain;
+    }
+
+    @include respond(phone) {
+        width: 41rem;
+        height: 30rem;
+        // padding-left: 1rem;
+        object-fit: contain;
+        overflow: hidden;
+    }
+}
